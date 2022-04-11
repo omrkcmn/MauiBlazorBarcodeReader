@@ -1,0 +1,13 @@
+﻿@page "/opencamera"
+<h3>OpenCamera</h3>
+
+<h2>Bu sayfada kameraya erişilecek</h2>
+
+<button @onclick="Tikla">Tıkla</button>
+
+@code {
+    private void Tikla()
+    {
+        App.Current.MainPage.DisplayAlert("Alert", "Display Alert Message.", "Okay");
+    }
+}
